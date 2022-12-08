@@ -1,0 +1,76 @@
+/* ====================== Connect the Lato font from Google fonts ==========*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+/* ====================== CCS Properties Home Work=============================== */
+html,
+body {
+	scroll-behavior: smooth;
+}
+body {
+	/* Default value */
+	font-family: "Lato", sans-serif;
+	font-family: 'Inconsolata', monospace;
+	color: #fff;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	position: relative;
+	min-height: 100%;
+}
+/* Confining container */
+[class*="__container"] {
+	max-width: 1230px;
+	margin: 0 auto;
+}
+/* ======================MAIN====================== */
+main {
+	flex: 1 1 auto;
+}
+.content__video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+/* ======================HEADER====================== */
+
+/* ======================FOOTER====================== */
+.footer {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 0;
+	gap: 15px;
+	opacity: 0;
+	visibility: hidden;
+	background: transparent;
+	animation: footer 5s ease 15s forwards;
+}
+@keyframes footer {
+	0% {
+		opacity: 0;
+		visibility: hidden;
+	}
+	100% {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+.footer__title {
+	font-size: 3rem;
+	position: relative;
+	z-index: 2;
+}
+.footer__link {
+	flex: 0 1 75px;
+}
+.footer__link img{
+	max-width: 100%;
+	position: relative;
+	z-index: 2;
+}
